@@ -1,12 +1,11 @@
 :root{
     --primary: #fff;
-    --bg-color: rgb(5, 53, 61);
+    --bg-color: #03acca;
     --bg-envelope-color: #f5edd1;
-    --envelope-tab: #ecdeb8;
-    --envelope-cover: #e6cfa7;
+    --envelope-tab: #c4a673;
+    --envelope-cover: #d4b98b;
     --shadow-color: rgba(0, 0, 0, 0.2);
     --txt-color: #444;
-    --stamp-color: rgb(252, 8, 231);
   }
   body{
     margin: 0;
@@ -16,6 +15,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Caveat', sans-serif!important;
+    font-weight: 500;
   }
   .container {
     height: 100vh;
@@ -71,7 +72,7 @@
   }
   
   .envelope > .letter > .text {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     color: var(--txt-color);
     text-align: left;
     font-size: 10px;
@@ -96,8 +97,6 @@
   .stamp:after {
     content: "";
     position: absolute;
-    
-    background-color: var(--stamp-color);
     border-radius: 50%;
   }
   .flap > .envelope:before {
@@ -122,4 +121,18 @@
     .stamp{
         top: 55%;
       }
+  }
+  .link{
+    text-decoration: none;
+    padding-left: 2px;
+    font-weight: 700;
+    color: black;
+  }
+  .letter-text-item{
+    padding: 5px;
+    display: flex;
+    align-items: flex-end;
+  }
+  i{
+    padding-left: 5px;
   }
