@@ -117,3 +117,9 @@
   .flap{
     border-radius: 0 0 6% 6%;
   }
+
+  @media (max-width: 500px) {
+    .stamp{
+        top: 55%;
+      }
+  }
